@@ -48,7 +48,10 @@ let Seattle = {
     let listItem = document.createElement('li');
     SalesList.appendChild(listItem);
     listItem.textContent = ' Total: ' + this.TotalSalesPerDay ;
-
+    listItem.setAttribute('class','TotalsClass');
+    let horizantalLine = document.createElement('hr');
+    horizantalLine.setAttribute('width','700');
+    Sales.appendChild(horizantalLine);
   }
 
 };
@@ -98,7 +101,10 @@ let Tokyo = {
     let listItem = document.createElement('li');
     SalesList.appendChild(listItem);
     listItem.textContent = ' Total: ' + this.TotalSalesPerDay ;
-
+    listItem.setAttribute('class','TotalsClass');
+    let horizantalLine = document.createElement('hr');
+    horizantalLine.setAttribute('width','700');
+    Sales.appendChild(horizantalLine);
   }
 
 };
@@ -149,7 +155,10 @@ let Dubai = {
     let listItem = document.createElement('li');
     SalesList.appendChild(listItem);
     listItem.textContent = ' Total: ' + this.TotalSalesPerDay ;
-
+    listItem.setAttribute('class','TotalsClass');
+    let horizantalLine = document.createElement('hr');
+    horizantalLine.setAttribute('width','700');
+    Sales.appendChild(horizantalLine);
   }
 
 };
@@ -199,7 +208,10 @@ let Paris = {
     let listItem = document.createElement('li');
     SalesList.appendChild(listItem);
     listItem.textContent = ' Total: ' + this.TotalSalesPerDay ;
-
+    listItem.setAttribute('class','TotalsClass');
+    let horizantalLine = document.createElement('hr');
+    horizantalLine.setAttribute('width','700');
+    Sales.appendChild(horizantalLine);
   }
 
 };
@@ -250,7 +262,9 @@ let Lima = {
     let listItem = document.createElement('li');
     SalesList.appendChild(listItem);
     listItem.textContent = ' Total: ' + this.TotalSalesPerDay ;
-
+    listItem.setAttribute('class','TotalsClass');
+    let horizantalLine = document.createElement('hr');
+    Sales.appendChild(horizantalLine);
   }
 
 };
