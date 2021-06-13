@@ -79,7 +79,7 @@ function render(objectName){
   Sales.appendChild(horizantalLine);
 }
 
-function initializeRandomNumbers(){
+function calculateAndRenderSalesData(){
   for (let i = 0 ; i < locationsarray.length ; i++) {
     minCustomers(1,minimumGivinCustomerAvrg[i],locationsarray[i]);
     maxCustomers(minimumGivinCustomerAvrg[i],maximumGivinCustomerAvrg[i],locationsarray[i]);
@@ -87,4 +87,4 @@ function initializeRandomNumbers(){
     render(locationsarray[i]);
   }
 }
-initializeRandomNumbers();
+calculateAndRenderSalesData();
