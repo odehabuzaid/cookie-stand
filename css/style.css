@@ -46,7 +46,12 @@ article ul li {
   }
 
  .TotalsClass{color:rgb(255, 166, 1);}
-      
+#WelcomeMsg{
+   
+    justify-content: center;
+    height:fit-content;
+    text-align: center;} 
+
   nav {
     
     margin: 0 auto;
