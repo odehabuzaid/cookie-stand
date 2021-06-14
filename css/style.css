@@ -78,9 +78,6 @@ hr {
   margin-bottom: 20px;
 }
 
-header {
- 
-}
 footer a {
   color: sandybrown;
 }
@@ -91,23 +88,21 @@ footer {
   padding-bottom: 15px;
   padding-top: 15px;
   margin-bottom: 0px;
+  margin-top: 20px;
   position: absolute;
-  bottom: 0;
   width: 100%;
-  height: 60px; /* Height of the footer */
-}
-sm-handle {
-  display: flex;
-
-  padding-top: 2rem;
-
-  justify-content: center;
+  height: 60px; 
 }
 
 
+.tablesDiv{
+ text-align: center;
+}
 
 table {
-  margin: 0 auto;
+  margin-bottom: 10px;
+  text-align: center;
+ margin-left: 50px;
 }
 
 /* Default Table Style */
