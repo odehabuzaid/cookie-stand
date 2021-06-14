@@ -1,124 +1,133 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 * {
-    font-family: Arial, sans-serif;
-  }
-  
-  body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.5;
-    color:black;
-    background-color: rgb(41, 21, 18);
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-  header img{
-      margin-left: 40px;
-      margin-top: 20px;
-  }
-  main{margin-left:70px;}
-main h1{
-      background-color: dodgerblue;
-      width: 400px;
-      font-size: 27px;
-      border-radius: 30px;
-      text-align: center;
-      margin-top: 20px;
-      color:white;
-  }
-main h2{
-      font-family: Arial, Helvetica, sans-serif ;
-      font-size: 23px;
-      margin-left: 20px;
-      margin-bottom: 5px;
-      margin-top: 5px;
-      color :dodgerblue
-  }
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  color: black;
+  background-color: white(41, 21, 18);
+  height: 700%;
+}
 
-article ul li {
-    font-family: Georgia, 'Times New Roman', Times, serif ;
-    color: rgb(251, 242, 224);
-    margin-left: 50px;
-  }
+header img {
+  margin-left: 40px;
+  margin-top: 20px;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+  position: relative;
+  z-index: 1;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all 0.5s;
+}
+nav ul li a:hover {
+  color: salmon;
+}
+nav ul > a:hover {
+  animation-name: text_fadein;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
 
-  hr{
-      margin-top: 20px;
-      margin-bottom: 20px;
-  }
+nav ul > li:hover span {
+  cursor: default;
+}
 
- .TotalsClass{color:rgb(255, 166, 1);}
-#WelcomeMsg{
-   
-    justify-content: center;
-    height:fit-content;
-    text-align: center;} 
+main h1 {
+  background-color: dodgerblue;
+  width: 400px;
+  font-size: 27px;
+  border-radius: 30px;
+  text-align: center;
+  margin-top: 20px;
+  margin-left:50%px;
+  position:relative;
 
-  nav {
-    
-    margin: 0 auto;
-  }
-  nav ul {
-    list-style: none;
-    text-align: center;
-  }
-  nav ul li {
-    display: inline-block;
-  }
-  nav ul li a {
-    display: block;
-    padding: 15px;
-    text-decoration: none;
-    color: #aaa;
-    font-weight: 800;
-    text-transform: uppercase;
-    margin: 0 10px;
-    position:relative;
-    z-index: 1;
-  }
-  nav.shift ul li a:hover {
-    color: #91640F;
-  }
-  nav.shift ul li a:after {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    width: 100%;
-    height: 1px;
-    content: '.';
-    color: transparent;
-    background: #F1C40F;
-    visibility: none;
-    opacity: 0;
-    z-index: -1;
-  }
-  nav.shift ul li a:hover:after {
-    opacity: 1;
-    visibility: visible;
-    height: 100%;
-  }
-  nav ul li a,
-  nav ul li a:after,
-  nav ul li a:before {
-    transition: all .5s;
-  }
-  nav ul li a:hover {
-    color: rgb(0, 0, 0);
-  }
-  nav ul>a:hover{
-    animation-name: text_fadein;
-    animation-duration: 0.3s;
-    animation-fill-mode: forwards;
-  }
+}
+main h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 23px;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  color: dodgerblue;
+  text-align: center;
+}
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
-  nav ul>li:hover span{
-    cursor: default;
-  }
-  
-  nav ul>a:hover>li{
-    animation-name: menu_fadein;
-    animation-duration: 0.3s;
-    animation-fill-mode: forwards;
-  }
+header {
+ 
+}
+footer a {
+  color: sandybrown;
+}
+footer {
+  color: white;
+  background-color: #3a3a3a;
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  margin-bottom: 0px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Height of the footer */
+}
+sm-handle {
+  display: flex;
+
+  padding-top: 2rem;
+
+  justify-content: center;
+}
+
+
+
+table {
+  margin: 0 auto;
+}
+
+/* Default Table Style */
+table {
+  color: #333;
+  background: white;
+  border: 1px solid grey;
+  font-size: 12pt;
+  border-collapse: collapse;
+}
+table thead th,
+table tfoot th {
+  color: #777;
+  background: rgba(0, 0, 0, 0.1);
+}
+table caption {
+  padding: 0.5em;
+}
+table th,
+table td {
+  padding: 0.5em;
+  border: 1px solid lightgrey;
+}
