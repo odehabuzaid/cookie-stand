@@ -68,14 +68,6 @@ new CookiesShop('Dubai',11,38,3.7,0);
 new CookiesShop('Paris',20,38,2.3,0);
 new CookiesShop('Lima',20,38,2.3,0);
 
-
-function tossersClaculator(custumerPerHour){
-  let tossers = 0;
-  if ((custumerPerHour % 1) === 0) {
-    tossers = ( custumerPerHour / 20 ) + 1 ;
-  }else {tossers = ( custumerPerHour / 2 );}
-  return Math.ceil(tossers);
-}
 function renderHeaderRow(tableName) {
   let tableHeadingsElement = document.createElement('thead');
   let tableRowElement = document.createElement('tr');
@@ -134,7 +126,13 @@ function grandTotalsSummation(){
   }
   return sum;
 }
-
+function tossersClaculator(custumerPerHour){
+  let tossers = 0;
+  if ((custumerPerHour % 1) === 0) {
+    tossers = ( custumerPerHour / 20 ) + 1 ;
+  }else {tossers = ( custumerPerHour / 2 );}
+  return Math.ceil(tossers);
+}
 function calculateAndRenderSalesData(){
   for(let i in locationsarray) {
     locationsarray[i].cookiesSalesgenerator();
@@ -142,8 +140,10 @@ function calculateAndRenderSalesData(){
     locationsarray[i].rendertossersTable();
   }
 }
-renderHeaderRow(locationsSalesTable);
-renderHeaderRow(requiredTossersTable);
 calculateAndRenderSalesData();
+renderHeaderRow(locationsSalesTable);
 renderFooterRow(locationsSalesTable);
+renderHeaderRow(requiredTossersTable);
+
+
 
