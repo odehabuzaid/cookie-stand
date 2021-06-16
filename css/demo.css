@@ -34,6 +34,7 @@
 #logo h1{
     padding: 20px;
 }
+
   main {
     overflow-x: scroll;
     height: auto;
@@ -72,6 +73,9 @@
     border-radius: 20px;
     gap: 30px;
   }
+  #tossersRequired{
+    margin-bottom:20px;
+  }
   #copyRights
   {
      display: inline-flex;
@@ -109,6 +113,7 @@ table {
   table td {
     padding: 0.5em;
     border: 1px solid lightgrey;
+    text-align: center;
   }
   footer {
     background-color: rgb(61, 59, 59);
@@ -192,6 +197,59 @@ table {
       flex: 1;
   }
 
-  #tossersRequired{
-      margin-bottom:20px;
+
+
+  .open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 500px;
+    right: 28px;
+    width: 200px;
+  }
+  
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 200px;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+    
+  }
+  .form-container input[type=text],input[type=number], .form-container input[type=password] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  .form-container .btn {
+    background-color:  #333;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  .form-container .cancel {
+    background-color: red;
+  }
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
   }
