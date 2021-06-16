@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sales - Cookie Stand</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link href="css/demo.css" type="text/css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/jpg" href="../assets/favicon.png"/>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link href="../css/demo.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
     <header>
@@ -15,23 +16,39 @@
        <h1>Pat's Salmon Cookies Shop</h1>
         </div>
          <nav>
-                 <a href="index.html">Home</a>
-               <a href="sales.html">Sales</a>
+                 <a href="../index.html">Home</a>
+               <a href="../pages/sales.html">Sales</a>
+               <a href="#">Locations</a>
              </ul>
          </nav>
  
      </header>
     <main>
+        <aside>
+            <button type="button" class="open-button" id="openNewFormbtn" >Cookie Stand Locations</button>
+            <div class="form-popup" id="newLocationForm">
+                <form class="form-container" id="addNewForm">
+                    <h1>Locations</h1>
+                                <input type="text" name="location_name" value="Seattle"  placeholder="Location Name" id="location_name" required="required" style="width:60%">
+                               
+                                <select name="locationsSelect" class="select-dropdown" style="width:230px;height: 50px;" id="currentLocations" >
+                                    <!-- <option value="volvo">Volvo</option> -->
+                                  </select> 
+                                <button type="button" class="btn" id="newLocation" title="New Location" style="width:20%;height: 52px;font-size:17px;">+</button><br>
+                                <input type="number" name="Maximum-Customers" value="11" placeholder="Min Customers" id="min_cust_avrg" style="width:40%" required="required" >
+                                <input type="number" name="Minimum-Customers" value="25" placeholder="Max Customers" id="max_cust_avrg" style="width:38%" required="required" ><br>
+                               <input type="number" step="0.01" name="name" value="6.3" placeholder="Avrg Cookies Per Customer"  id="cookies_avrg"  required="required" >
+                               <button type="submit" class="btn" id="submitData" > Submit</button>
+                               <button type="button" class="btn cancel" id="closeFormbtn" >Close</button>
+                            </form>
+            </div>
+        </aside>
        <section>
-           
        </section>
         <div class="tablesDiv">
-
-      
         <h1>Pat’s Salmon Cookies Sales</h1>
         <hr>
         <table id="locationsSalesTable"></table>
-        <br>
         <br>
         <h1>Tossers Needed.</h1>
         <hr>
@@ -39,19 +56,11 @@
     </main>
     <div class="container">
         <footer>
-    
             <section class="footer-Main">
                 <div class="footer-Main-item">
                     <h2 class="footer-Title">Branches</h2>
-                    <ul>
-                        <li><a href="#">Seattle&nbsp;&nbsp;&nbsp;| 64th St, Seattle, WA 98115, United States</a></li>
-                        <li><a href="#">Toykyo&nbsp;&nbsp;&nbsp;| Jingumae, Shibuya City, Tokyo 150-0001, Japan</a></li>
-                        <li><a href="#">Dubai&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| Al Shera Tower - Unit B - 01 Cluster E - Dubai
-                                - UAE</a></li>
-                        <li><a href="#">Paris&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 72 Rue Legendre, 75017 Paris, France</a>
-                        </li>
-                        <li><a href="#"> Lima&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| Jirón de la Unión 272, Cercado de Lima
-                                15001, Peru</a></li>
+                    <ul id="LocationsList">
+
                     </ul>
                 </div>
                 <div class="footer-Main-item">
@@ -63,9 +72,11 @@
                 <div class="footer-Main-item">
                     <h2 class="footer-Title">Delivery</h2>
                     <ul>
-                        <li><a href="#">Only avaliable friday's</a></li>
+                        <li>avaliable only on friday</li>
                     </ul>
                 </div>
+                    <div class="footer-Main-item">
+                    </div>
             </section>
             <section class="footer-social">
                 <ul class="footer-Social-list">
@@ -84,6 +95,6 @@
             </section>
         </footer>
     </div>
-    <script src="js/app.js"></script>
+    <script src="../js/app.js"></script>
 </body>
 </html>

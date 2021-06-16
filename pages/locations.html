@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales - Cookie Stand</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="css/demo.css" type="text/css" rel="stylesheet" />
+    <script>
+      function openForm() {document.getElementById('newLocationForm').style.display = 'block'; }
+      function closeForm() {document.getElementById('newLocationForm').style.display = 'none';}
+  </script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+         <img src="https://codefellows.github.io/code-201-guide/curriculum/class-06/lab/assets/salmon.png" width="150">
+       <h1>Pat's Salmon Cookies Shop</h1>
+        </div>
+         <nav>
+                 <a href="index.html">Home</a>
+               <a href="sales.html">Sales</a>
+             </ul>
+         </nav>
+ 
+     </header>
+    <main>
+       <section>
+           
+       </section>
+        <div class="tablesDiv">
+        <h1>Pat’s Salmon Cookies Sales</h1>
+        <hr>
+        <table id="Locationstable"></table>
+        <br>
+        <table id="locationsSalesTable"></table>
+        <br>
+        <br>
+        <h1>Tossers Needed.</h1>
+        <hr>
+        <table id="tossersRequired"></table>
+    </main>
+    <div class="container">
+        <footer>
+    
+            <section class="footer-Main">
+                <div class="footer-Main-item">
+                    <h2 class="footer-Title">Branches</h2>
+                    <ul>
+                        <li><a href="#">Seattle&nbsp;&nbsp;&nbsp;| 64th St, Seattle, WA 98115, United States</a></li>
+                        <li><a href="#">Toykyo&nbsp;&nbsp;&nbsp;| Jingumae, Shibuya City, Tokyo 150-0001, Japan</a></li>
+                        <li><a href="#">Dubai&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| Al Shera Tower - Unit B - 01 Cluster E - Dubai
+                                - UAE</a></li>
+                        <li><a href="#">Paris&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 72 Rue Legendre, 75017 Paris, France</a>
+                        </li>
+                        <li><a href="#"> Lima&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| Jirón de la Unión 272, Cercado de Lima
+                                15001, Peru</a></li>
+                    </ul>
+                </div>
+                <div class="footer-Main-item">
+                    <h2 class="footer-Title">Opening Hours</h2>
+                    <ul>
+                        <li>Daily From 7am - 8pm</li>
+                    </ul>
+                </div>
+                <div class="footer-Main-item">
+                    <div class="footer-Main-item">
+                        <button  onclick="openForm()" class="open-button" id="openFormbtn" >Open Form</button>
+                        <div class="form-popup" id="newLocationForm">
+                            <form class="form-container" id="addNewForm">
+                                <h1>add New Location</h1>
+                                            <input type="text" name="name" value="" placeholder="Location Name" id="location_name" style="width:80%" /><br>
+                                            <input type="text" name="name" value="" placeholder="Min Customers" id="min_cust_avrg" style="width:35%" />
+                                            <input type="text" name="name" value="" placeholder="Max Customers" id="max_cust_avrg" style="width:35%" /><br>
+                                           <input type="text" name="cookiesaverage" placeholder="Avrg Cookies Per Customer" value="" id="cookies_avrg" style="width:80%" />
+                                           <button type="submit" class="btn"> Submit</button>
+                                           <button type="button" onclick="closeForm()" class="btn cancel" id="closeFormbtn" >Close</button>
+                                        </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="footer-social">
+                <ul class="footer-Social-list">
+                    <li><a href="https://web.facebook.com/odehabuzaid1"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/Odehabuzaid1"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://github.com/odehabuzaid"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/odehabuzaid/"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://soundcloud.com/o-abuzaid"><i class="fab fa-soundcloud "></i></a></li>
+                </ul>
+            </section>
+            <section class="footer-CopyRights">
+                <ul class="footer-CopyRights-List">
+                    <li>&copy; 2019 Copyright Odeh Abuzaid | Software Development Studen @ ASAC - LTUC.</li>
+                </ul>
+            </section>
+        </footer>
+    </div>
+   
+</body>
+</html>
