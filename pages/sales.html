@@ -9,11 +9,14 @@
     <link rel="shortcut icon" type="image/jpg" href="../assets/favicon.png" />
     <link rel="stylesheet" href="../css/reset.css">
     <link href="../css/style.css" type="text/css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pie-chart/1.0.0/pie-chart.js"></script>
+
 </head>
 
 <body>
     <header>
-        <div id="logo">
+        <div class="logo">
             <img src="https://codefellows.github.io/code-201-guide/curriculum/class-06/lab/assets/salmon.png"
                 width="150">
             <h1>Pat's Salmon Cookies Shop</h1>
@@ -27,30 +30,28 @@
 
     </header>
     <main>
-        <aside>
+        <aside></aside>
             <button type="button" class="open-button" id="openNewFormbtn">Cookie Stand Locations</button>
             <div class="form-popup" id="newLocationForm">
                 <form class="form-container" id="addNewForm">
-                    <h1>Locations</h1>
-                    <input type="text" name="location_name" value="Seattle" placeholder="Location Name"
-                        id="location_name" required="required" style="width:200px">
-
-                    <select name="locationsSelect" class="select-dropdown" style="width:230px;height: 50px;"
-                        id="currentLocations">
-                        <!-- <option value="volvo">Volvo</option> -->
+                    <h2>Locations</h2>
+                    <input type="text"  name="location_name" value="Seattle"  placeholder="Location Name" id="location_name" required="required" >
+                    <select name="locationsSelect" class="select-dropdown"  id="currentLocations"></select>
                     </select>
-                    <button type="button" class="btn" id="newLocation" title="New Location"
-                        style="width:20%;height: 52px;font-size:17px;">+</button><br>
-                    <input type="number" name="Maximum-Customers" value="11" placeholder="Min Customers"
+                    <button type="button" class="btn-add" id="newLocation" title="New Location" >+</button><br>
+                    <input type="number" name="Maximum-Customers" value="" placeholder="Min Customers"
                         id="min_cust_avrg" style="width:40%" required="required">
-                    <input type="number" name="Minimum-Customers" value="25" placeholder="Max Customers"
+                    <input type="number" name="Minimum-Customers" value="" placeholder="Max Customers"
                         id="max_cust_avrg" style="width:38%" required="required"><br>
-                    <input type="number" step="0.01" name="name" value="6.3" placeholder="Avrg Cookies Per Customer"
+                    <input type="number" step="0.01" name="name" value="" placeholder="Avrg Cookies Per Customer"
                         id="cookies_avrg" required="required">
                     <button type="submit" class="btn" id="submitData"> Submit</button>
                     <button type="button" class="btn cancel" id="closeFormbtn">Close</button>
                 </form>
             </div>
+       
+        <aside class="chart">
+            <canvas id="pieChart" class="pieChart"></canvas>
         </aside>
         <section>
         </section>
@@ -62,6 +63,7 @@
             <h1>Tossers Needed.</h1>
             <hr>
             <table id="tossersRequired"></table>
+           
     </main>
     <div class="container">
         <footer>
